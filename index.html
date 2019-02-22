@@ -1,0 +1,44 @@
+<html>
+<head>
+</head>
+<body>
+
+<div>
+	<b>Problem:</b><br/><br/>
+	We are marooned on an island that has the following curious property: Everyone over a certain age lies all the time. More specifically, there is an age limit L — a positive integer — and all islanders who are younger than age L only tell the truth, while islanders who are at least L years old only tell lies.<br/><br/>
+
+
+We are greeted by five islanders who make the following statements:<br/><br/>
+
+A: “B is more than 20 years old.”<br/>
+A: “D is more than 16 years old.”<br/><br/>
+
+B: “C is more than 18 years old.”<br/>
+B: “E is less than 20 years old.”<br/><br/>
+
+C: “D is less than 22 years old.”<br/>
+C: “A is 19 years old.”<br/><br/>
+
+D: “E is not 17 years old.”<br/>
+D: “B is 20 years old.”<br/><br/>
+
+E: “A is more than 21 years old.”<br/>
+E: “C is less than 18 years old.”<br/><br/>
+<hr/><br/>
+<b>Solution:</b>
+L is 19.<br/><br/>
+
+Honest islanders: C, D<br/>
+Lying islanders: A, B, E<br/><br/>
+
+A is 19 (C told us, while telling the truth.)<br/>
+B is 20 (D told us, while telling the truth.)<br/>
+C is 18 (less than 19 from lying B, greater than 17 from lying E.)<br/>
+D is younger than 17 (from lying A)<br/>
+E is older than 19 (from lying B)<br/><br/>
+</div>
+<hr/><br/>
+	<script src="./logic.js">
+	</script>
+</body>
+</html>
